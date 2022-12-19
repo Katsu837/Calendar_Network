@@ -1,0 +1,567 @@
+main
+{
+  margin: 22px 14px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100%;
+}
+.Capibara
+{
+  position: relative;
+  z-index: -1;
+  bottom: 590px;
+  left: 100px;
+}
+article
+{
+  padding: 0 22px 0 0;
+  width: 270px;
+  height: 100%;
+  display: flex;
+  position: sticky;
+  top: 2%;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+.Calendar
+{
+  width: 250px;
+  padding: 8px 8px 8px 8px;
+  align-items: start;
+  border-radius: 10px;
+  background:rgba(255,255,255, .1);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+}
+.CalendarFirstLine
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: Raleway;
+  font-size: 15pt;
+  margin: 2% 5px 2% 15px;
+}
+.CalendarFirstLineButton
+{
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.CalendarFirstLineButton button
+{
+  width: 47%;
+  border-radius: 2px;
+  font-family: Raleway;
+  font-size: 14pt;
+  border: none;
+  background:rgba(255,255,255, .05);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+.CalendarFirstLineButton button:hover
+{
+  background: green;
+  color: white;
+}
+.CalendarMain
+{
+  padding: 5px 2%;
+  display: flex;
+  flex-direction: column;
+  justify-items: start;
+}
+.DaysOfTheWeek
+{
+  font-family: Raleway;
+  font-size: 10pt;
+  display: flex;
+  justify-content: space-around;
+  padding: 2px 1%;
+  font-weight: bold;
+}
+.Numbers
+{
+  font-size: 10pt;
+  font-family: Raleway;
+  display: table;
+}
+.Numbers tr
+{
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  text-align: center;
+  background: transparent;
+  padding: 2px 1%;
+}
+.CloseFriends
+{
+  width: 250px;
+  padding: 8px 3%;
+  isplay: flex;
+  flex-direction: column;
+  background: darkturquoise;
+  border-radius: 10px;
+  background:rgba(255,255,255, .1);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+}
+.CloseFriendsTitle
+{
+  padding: 8px 5%;
+  font-weight: bold;
+  font-family: Raleway;
+  font-size: 15pt;
+}
+.CloseFriendsButtons
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Raleway;
+  font-weight: bold;
+  border-radius: 10px;
+}
+.CloseFriends button
+{
+  cursor: pointer;
+  text-align: center;
+  padding: 10px 3px;
+  width: 100%;
+  border-radius: 10px;
+  font-family: Raleway;
+  font-size: 14pt;
+  border: none;
+  background: transparent;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+.CloseFriends button:hover
+{
+  background: green;
+  color: white;
+}
+.someButton
+{
+  width: 100%;
+}
+.someButton button
+{
+  margin-right: auto;
+  margin-left: auto;
+}
+.dropdown-content
+{
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a
+{
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {background-color: #ddd}
+.show {display:block;}
+
+
+
+.Today
+{
+  min-width: 204px;
+  margin: 0 22px 0 0;
+  width: 30%;
+  height: 100%;
+  border-radius: 15px;
+  background:rgba(37, 52, 45, .2);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  display: grid;
+  grid-template-rows: 50px 10px calc(100% - 64px) 4px;
+  grid-template-columns: 80px calc(100% - 110px) 30px;
+
+}
+.Today h3
+{
+  font-family: 'Raleway';
+  text-align: center;
+  grid-row: 1/2;
+  grid-column: 1/3;
+}
+.AddNewEvent
+{
+  background: transparent;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  border: none;
+  padding: 0 0 0 0;
+  grid-column: 3/4;
+  grid-row: 1/2;
+  position: relative;
+  top: 14px;
+}
+.AddNewEvent img
+{
+  filter: opacity(55%);
+}
+.AddNewEvent:hover img
+{
+  filter: opacity(100%) ;
+}
+.TodaysEvent
+{
+  grid-column: 1/4;
+  grid-row: 3/4;
+  display: grid;
+  grid-template-columns: 80px calc(100% - 80px);
+  grid-template-rows: repeat(24, 36px);
+  text-align: center;
+}
+.time
+{
+  grid-column: 1/2;
+  font-size: 13pt;
+  font-family: Raleway;
+  border: black;
+  border-style: none none double none;
+  border-width: 1px;
+}
+.time a
+{
+  position: relative;
+  top: 8px;
+}
+.text
+{
+  grid-column: 2/3;
+  border: black;
+  border-style: none none double none;
+  border-width: 1px;
+}
+.last
+{
+  border: none;
+}
+
+
+.NextDays
+{
+  min-width: 265px;
+  width: 55%;
+  height: 100%;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background:rgba(108, 146, 175, .4);
+  -webkit-backdrop-filter: blur(20px);
+}
+.NextDays section
+{
+  width: 32%;
+}
+.NextDays section:first-child
+{
+  border-right: 1px solid black;
+}
+.NextDays section:last-child
+{
+  border-left: 1px solid black;
+}
+.NextDays section img
+{
+  width: 100%;
+  height: 70%;
+}
+.NextDays h4
+{
+  font-family: 'Raleway';
+  text-align: center;
+}
+.strNameEvent
+{
+  font-size: 13pt;
+  font-family: Raleway;
+  padding: 2px 5px;
+  margin: 2px;
+  font-weight: bold;
+}
+.strTimeEvent
+{
+  font-family: Raleway;
+  font-size: 12pt;
+  padding: 2px 5px;
+  margin: 2px;
+  border-bottom: 1px solid black;
+}
+.strTimeEventWithoutLine
+{
+  font-family: Raleway;
+  font-size: 12pt;
+  padding: 2px 5px;
+  margin: 2px;
+}
+
+
+
+
+#id01
+{
+  display: none;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  text-align: center;
+  vertical-align: center;
+  width: 350px;
+  height: 170px;
+  z-index: 1;
+  color: mediumseagreen;
+}
+.formNewEvent
+{
+  display: grid;
+  width: 350px;
+  height: 170px;
+  justify-content: center;
+  align-content: center;
+  border-radius: 15px;
+  background:rgba(0,0,0, .7);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  grid-template-rows: 30px repeat(2, 50px) 25px;
+  grid-template-columns: 160px 160px;
+}
+.Lab
+{
+  grid-column: 1/3;
+  grid-row: 1/2;
+  font-family: Raleway;
+  font-size: 13pt;
+  text-align: center;
+}
+.nameEvent
+{
+  grid-column: 1/3;
+  grid-row: 2/3;
+  height: 40px;
+  border-radius: 10px;
+}
+.dateEvent
+{
+  grid-column: 1/2;
+  grid-row: 3/4;
+  height: 40px;
+  border-radius: 10px;
+}
+.startTimeEvent
+{
+  grid-row: 3/4;
+  grid-column: 2/3;
+  height: 40px;
+  width: 45%;
+  position: relative;
+  left: 2%;
+  border-radius: 10px;
+}
+.endTimeEvent
+{
+  grid-row: 3/4;
+  grid-column: 2/3;
+  height: 40px;
+  width: 45%;
+  position: relative;
+  left: 52%;
+  border-radius: 10px;
+}
+.Save
+{
+  grid-row: 4/5;
+  grid-column: 1/2;
+}
+.Cansel
+{
+  grid-row: 4/5;
+  grid-column: 2/3;
+}
+.formNewEvent button
+{
+  background: transparent;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  border-radius: 10px;
+  font-family: Raleway;
+  cursor: pointer;
+  width: 90px;
+  margin: 1px 35px;
+  border: none;
+  color: mediumseagreen;
+}
+.formNewEvent button:hover
+{
+  background: green;
+  color: white;
+  padding: 0 0;
+}
+
+
+
+
+
+@media (max-width: 930px)
+{
+  .Main
+  {
+    flex-direction: column;
+    align-content: center;
+  }
+  .Today
+  {
+    margin: 10px 10px;
+    width: 100%;
+    min-width: 265px;
+    margin: 0 0 0 0;
+  }
+  .Today h3
+  {
+    white-space: nowrap;
+  }
+  .NextDays
+  {
+    margin: 10px 0 0 0;
+    width: 100%;
+  }
+  .CloseFriends
+  {
+    display: none;
+  }
+  .leftMenu
+  {
+    padding: 0;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 700px)
+{
+  .NextDays
+  {
+    flex-direction: column;
+  }
+  .NextDays section
+  {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .NextDays section:first-child, .NextDays section:last-child
+  {
+    border: none;
+  }
+}
+
+@media (max-width: 450px)
+{
+  #id01
+  {
+    width: 200px;
+    height: 260px;
+  }
+  .formNewEvent
+  {
+    justify-content: center;
+    align-content: center;
+    width: 200px;
+    height: 260px;
+    grid-template-rows: 50px repeat(3, 50px) 25px;
+    grid-template-columns: 100px 100px;
+  }
+  .formNewEvent:only-child
+  {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .Lab
+  {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    font-family: Raleway;
+    font-size: 13pt;
+    text-align: center;
+    margin: 0 5px;
+  }
+  .nameEvent
+  {
+    margin: 0 5px;
+    width: 91%;
+    grid-column: 1/3;
+    grid-row: 2/3;
+    height: 40px;
+    border-radius: 10px;
+  }
+  .dateEvent
+  {
+    margin: 0 5px;
+    width: 92%;
+    grid-column: 1/3;
+    grid-row: 3/4;
+    height: 40px;
+    border-radius: 10px;
+  }
+  .startTimeEvent
+  {
+    grid-row: 4/5;
+    grid-column: 1/2;
+    height: 40px;
+    width: 90%;
+    margin: 0 3px;
+    border-radius: 10px;
+  }
+  .endTimeEvent
+  {
+    grid-row: 4/5;
+    grid-column: 2/3;
+    height: 40px;
+    width: 90%;
+    position: relative;
+    left: 0;
+    border-radius: 10px;
+  }
+  .Save
+  {
+    grid-row: 5/6;
+    grid-column: 1/2;
+    position: relative;
+    left: 10px;
+  }
+  .Cansel
+  {
+    grid-row: 5/6;
+    grid-column: 2/3;
+    position: relative;
+    left: 10px;
+  }
+  .formNewEvent button
+  {
+    margin: 0 0;
+    width: 75px;
+  }
+}

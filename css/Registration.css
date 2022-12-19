@@ -1,0 +1,400 @@
+@keyframes Move
+{
+  from
+  {
+    bottom: 120px;
+    left: 170px;
+  }
+  10%
+  {
+    bottom: 120px;
+    left: 170px;
+  }
+  50%
+  {
+    bottom: 1px;
+    left: 0;
+  }
+  90%
+  {
+    bottom: -140px;
+    left: 20px;
+  }
+  to
+  {
+    bottom: -140px;
+    left: 20px;
+  }
+}
+@keyframes Move1
+{
+  from
+  {
+    top: 410px;
+    left: 20px;
+  }
+  15%
+  {
+    top: 410px;
+    left: 20px;
+  }
+  55%
+  {
+    top: 540px;
+    left: 220px;
+  }
+  95%
+  {
+    top:  440px;
+    left: 640px;
+  }
+  to
+  {
+    top:  440px;
+    left: 640px;
+  }
+}
+@keyframes Move2
+{
+  from
+  {
+    top: 210px;
+    left: 50px;
+  }
+  5%
+  {
+    top: 210px;
+    left: 50px;
+  }
+  45%
+  {
+    top: 10px;
+    left: 120px;
+  }
+  85%
+  {
+    top: -150px;
+    left: -180px;
+  }
+  to
+  {
+    top: -150px;
+    left: -180px;
+  }
+}
+
+body
+{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-family: Raleway;
+  padding: 100px;
+  margin: 100px;
+}
+
+:hover .Square
+{
+  animation-name: Move;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+:hover .Square1
+{
+  animation-name: Move1;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+:hover .Square2
+{
+  animation-name: Move2;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+section
+{
+  border-radius: 15px;
+  padding: 10px;
+  width: 600px;
+  background:rgba(0,0,0, .15);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+}
+
+.Registr
+{
+  display: grid;
+  grid-template-columns: 300px 300px;
+  grid-template-rows: 10% 8% 5% 15% 5% 15% 5% 14% 10% 13%;
+}
+
+
+.SignIn
+{
+  display: flex;
+  justify-content: center;
+}
+
+h1
+{
+  grid-row: 1/2;
+  grid-column: 1/3;
+  text-align: center;
+  margin: 5px 0;
+}
+.Comment
+{
+  grid-row: 2/3;
+  grid-column: 1/3;
+  text-align: center;
+}
+.L1
+{
+  grid-column: 1/3;
+  grid-row: 3/4;
+}
+.Fname
+{
+  width: 89%;
+}
+.Sname
+{
+  width: 89%;
+  justify-self: end;
+}
+.L2
+{
+  grid-row: 5/6;
+  grid-column: 1/3;
+}
+.Mail
+{
+  grid-row: 6/7;
+  grid-column: 1/3;
+}
+.L3
+{
+  grid-row: 7/8;
+  grid-column: 1/3;
+}
+.Psw
+{
+  width: 88%;
+  grid-row: 8/9;
+  grid-column: 1/2;
+}
+.PswR
+{
+  width: 88%;
+  justify-self: right;
+}
+.CommentPasswd
+{
+  font-size: 11px;
+  font-family: Raleway;
+  color: rgb(10,10,10);
+  margin-left: auto;
+  margin-right: auto;
+  grid-column: 1/3;
+  grid-row: 9/10;
+}
+.Politics
+{
+  grid-column: 1/3;
+  grid-row: 9/10;
+}
+.But
+{
+  grid-column: 1/3;
+  grid-row: 10/11;
+}
+p
+{
+  font-size: 10pt;
+  text-align: center;
+  color: rgb(10,10,10);
+}
+
+a
+{
+  color: rgb(10,10,10);
+}
+
+input
+{
+  border-radius: 10px;
+  padding: 15px;
+  margin: 3px 0;
+  border: none;
+  background: rgb(230,230,230);
+}
+
+.But
+{
+  border: none;
+  border-radius: 10px;
+  width: 60%;
+  padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  background: rgb(200,200,200);
+
+  webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+.But:hover
+{
+  background-color: green;
+  color: white;
+}
+
+.SocialNetsReg
+{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 6px 0 0 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+.facebook, .twitter, .telegram
+{
+  margin: 4px
+}
+.checkPsw
+{
+  grid-row: 8/9;
+  grid-column: 1/2;
+  position: relative;
+  right: 12px;
+  z-index: 1;
+  background: transparent;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  border: none;
+  padding: 0 0 0 0;
+  justify-self: right;
+  align-self: center;
+}
+
+
+
+.Square
+{
+  position: relative;
+  bottom: 120px;
+  left: 170px;
+  background:rgba(0,0,0, .15);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  min-width: 40px;
+  min-height: 40px;
+  max-width: 40px;
+  max-height: 40px;
+  border-radius: 15px;
+  z-index: -1;
+}
+.Square1
+{
+  position: relative;
+  top: 410px;
+  left: 20px;
+  background:rgba(0,0,0, .15);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  min-width: 80px;
+  min-height: 80px;
+  max-width: 80px;
+  max-height: 80px;
+  border-radius: 15px;
+  z-index: -1;
+}
+.Square2
+{
+  position: relative;
+  top: 210px;
+  left: 50px;
+  background:rgba(0,0,0, .15);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  min-width: 120px;
+  min-height: 120px;
+  max-width: 120px;
+  max-height: 120px;
+  border-radius: 15px;
+  z-index: -1;
+}
+
+label
+{
+  text-align: center;
+}
+
+@media (max-width: 1100px)
+{
+  .Square, .Square1, .Square2
+  {
+    display: none;
+  }
+}
+
+@media (max-width: 650px)
+{
+  .Registr
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  section
+  {
+    width: 100%;
+  }
+  body
+  {
+    padding: 0;
+    margin: calc(100%/2) 22px;
+    min-width: 276px;
+  }
+  .Fname, .Sname, .Psw, .PswR
+  {
+    width: auto;
+  }
+  .checkPsw
+  {
+    position: absolute;
+    bottom: 287px;
+    right: 13px;
+  }
+}
+
+@media (max-width: 360px)
+{
+  .checkPsw
+  {
+    position: absolute;
+    bottom: 303px;
+  }
+}
+
+@media (max-height: 950px)
+{
+  body
+  {
+    margin: calc(100%/4) 22px;
+  }
+}
+@media (max-height: 770px)
+{
+  body
+  {
+    margin: 10px 22px;
+  }
+}

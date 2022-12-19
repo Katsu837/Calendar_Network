@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/General.css">
+  <link rel="stylesheet" href="../css/MeetPlace.css">
+  <script src="../js/ThemeChange.js"></script>
+  <title> Места </title>
+  <link rel = "icon" type = "image/png" href="/img/747310.png">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+
+<body class="body Light-Theme">
+<header>
+
+  <div class="FirstLine">
+    <div class="Title">
+      <img class="logo" src="/img/747310.png" alt="Логотип" width="51" height="51">
+      <h1> Calendar Network </h1>
+    </div>
+    <div class="RightBoardFirstLine">
+      <div class="Registration">
+        <a href="Registration.html"  class="textRegistration" id="textRegistr"> Регистрация </a>
+        <a id="iconRegistr" href="Registration.html"><img src="/img/4092564-about-mobile-ui-profile-ui-user-website_114033.png" alt="Иконка профиля" width="28" height="28"></a>
+      </div>
+
+
+    </div>
+  </div>
+
+  <nav class="Navigation" >
+    <a href = "index.html" class="aNavigation first"> главная страница </a>
+    <a href = "Friends.html" class="aNavigation second"> друзья </a>
+    <a href = "MeetPlace.html" class="aNavigation third active"> места </a>
+    <a href = "Options.html" class="aNavigation fourth"> настройки </a>
+  </nav>
+
+</header>
+
+<main>
+  <div class="FirstLineP">
+    <div class="Map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2674.351484104415!2d37.53389164324976!3d55.691550799353685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf4f3b59d4d%3A0xc1e469a762cdba3!2z0JvQvtC80L7QvdC-0YHQvtCy0YHQutC40Lkg0L_RgNC-0YHQvy4sIDIzLCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1669839710912!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="ChosenPlace">
+      <a class="CLabel"> ДАБЛБИ </a>
+      <img class="CPhoto" src="/img/original_067e605c1dd480d8e1b958d18f2f4c22.jpg" alt="photo">
+      <p class="CText">
+        Самая амбициозная российская сеть кофеен, после ухода основательницы Анна Цфасман, позиций не сдает.
+        Сами занимаются поиском зеленого зерна и обжаривают кофе на своем производстве в Москве.
+      </p>
+      <a class="MiddlePrice"> Средняя стоимость
+        <img class="coin" src="/img/icons8-дешево-2-50.png" width="30" height="30">
+        <img class="coin" src="/img/icons8-дешево-2-50.png" width="30" height="30">
+        <img class="coin" src="/img/icons8-дешево-2-50%20(1).png" width="30" height="30">
+      </a>
+    </div>
+  </div>
+
+  <h2 class="Recomend">Похожие места</h2>
+  <div class="SecondLineP">
+
+    <div class="placeNum One" onclick="changePlace('#NumOne')">
+      <a class="NumOne Logo" id="NumOneL"> SURF COFFEE</a>
+      <img class="NumOne Photo" src="/img/DSC0257f5.jpg" id="NumOneP">
+      <p class="NumOne Text" id="NumOneT">
+        Одна из крупнейших российских сетей, которая любит сёрферские доски не меньше, чем кофе.
+        Расслабленная атмосфера и шезлонги в каждом споте - от Москвы до Хабаровска или Сочи.
+      </p>
+    </div>
+
+    <div class="placeNum Two" onclick="changePlace('#NumTwo')">
+      <a class="NumTwo Logo" id="NumTwoL"> CROP. </a>
+      <img class="NumTwo Photo" src="/img/XXL%20(1).webp" id="NumTwoP" >
+      <p class="NumTwo Text" id="NumTwoT">
+        На плечах команды кофеен Crop. лежит большая ответственность –
+        ежедневно они варят кофе для сотрудников таких уважаемых компаний, как Яндекс, Рамблер, Афиша и многих других.
+      </p>
+    </div>
+
+    <div class="placeNum Three" onclick="changePlace('#NumThree')">
+      <a class="NumThree Logo" id="NumThreeL"> BREW & VIBE </a>
+      <img class="NumThree Photo" src="/img/XXL2.webp" id="NumThreeP">
+      <p class="NumThree Text" id="NumThreeT">
+        «Кофейный оазис» Brew and Vibe расположилась в Раменках  – пальмы и расслабленное настроение прилагаются.
+        Готовят напитки на зерне Underground Coffee Project Сергея Степанчука, да еще и по приятным ценам.
+      </p>
+    </div>
+
+    <div class="placeNum Four" onclick="changePlace('#NumFour')">
+      <a class="NumFour Logo" id="NumFourL"> LOBBY </a>
+      <img class="NumFour Photo" src="/img/800x_bc39beefcd1379007a0a89cbce238ecc.jpg" id="NumFourP">
+      <p class="NumFour Text" id="NumFourT">
+        #Milk&Beans готовят классику, умело заваривают кофе всевозможными альтернативными способами и не забывают фантазировать
+        – тут вам и рождественский латте, и апельсиновый какао.
+      </p>
+    </div>
+
+    <div class="placeNum Five" onclick="changePlace('#NumFive')">
+      <a class="NumFive Logo" id="NumFiveL"> CAMERA OBSCURA </a>
+      <img class="NumFive Photo" src="/img/kofejnya-camera-obscura-cheremushkinskij-rynok.jpg" id="NumFiveP">
+      <p class="NumFive Text" id="NumFiveT">
+        Один из самых титулованных и мистических московских обжарщиков,
+        названный не то в честь старообрядческого фотоустройства, не то в честь романа Владимира Набокова.
+      </p>
+    </div>
+
+    <div class="placeNum Six" onclick="changePlace('#NumSix')">
+      <a class="NumSix Logo" id="NumSixL"> #MILK & BEANS</a>
+      <img class="NumSix Photo" src="/img/111111.jpeg" id="NumSixP">
+      <p class="NumSix Text" id="NumSixT">
+        #Milk&Beans готовят классику, умело заваривают кофе всевозможными альтернативными способами и не забывают фантазировать
+        – тут вам и рождественский латте, и апельсиновый какао.
+      </p>
+    </div>
+
+    <div class="placeNum Seven" onclick="changePlace('#NumSeven')">
+      <a class="NumSeven Logo" id="NumSevenL"> FLIP </a>
+      <img class="NumSeven Photo" src="/img/2797f98a819c1b307142b59a8ab7952f.jpeg" id="NumSevenP">
+      <p class="NumSeven Text" id="NumSevenT">
+        Кофейная сеть с эко-инициативами и трепетным подходом к кофе.
+        Здесь можно выпить альтернативу, авторские напитки и нитро-кофе.
+      </p>
+    </div>
+
+    <div class="placeNum Eight" onclick="changePlace('#NumEight')">
+      <a class="NumEight Logo" id="NumEightL"> НОВАТОР КОФЕ </a>
+      <img class="NumEight Photo" src="/img/IMG_4815-800x993.jpg" id="NumEightP">
+      <p class="NumEight Text" id="NumEightT">
+        Проект «кофеен в спальных районах Москвы» замечен не только в них – пара точек уже есть и в центре.
+        Зерно собственной обжарки, умеренные цены и свежая выпечка делают «Новаторов» любимцами районов.
+      </p>
+    </div>
+
+    <div class="placeNum Nine" onclick="changePlace('#NumNine')">
+      <a class="NumNine Logo" id="NumNineL"> КОФЕ&MOLOKO </a>
+      <img class="NumOne Photo" src="/img/Kofe-i-moloko-800x533.jpg" id="NumNineP">
+      <p class="NumOne Text" id="NumNineT">
+        Кофейная сеть с эко-инициативами и трепетным подходом к кофе.
+        Здесь можно выпить альтернативу, авторские напитки и нитро-кофе.
+      </p>
+    </div>
+
+    <div class="placeNum Ten" onclick="changePlace('#NumTen')">
+      <a class="NumNine Logo" id="NumTenL"> 22 CUPS </a>
+      <img class="NumTen Photo" src="/img/XXL3.webp" id="NumTenP">
+      <p class="NumOne Text" id="NumTenT">
+        Светлая и современная кофейня напротив посольства США на Новинском бульваре с отличным кофе и выпечкой.
+        Внутри 22 посадочных места – отсюда и название.
+      </p>
+    </div>
+
+    <div class="placeNum Eleven" onclick="changePlace('#NumEleven')">
+      <a class="NumEleven Logo" id="NumElevenL"> GENTLE </a>
+      <img class="NumEleven Photo" src="/img/KKS_2065-2.webp" id="NumElevenP">
+      <p class="NumEleven Text" id="NumElevenT">
+        Светское кафе с дизайнерским интерьером на границе двух гастрономических районов – Патриарших и Никитской.
+        Цены на кофе на уровне «Кофемании», зерно от Rockets Roasters и умопомрачительные десерты и выпечка.
+      </p>
+    </div>
+
+    <div class="back-glass"></div>
+  </div>
+
+</main>
+<footer class="foot">
+  <div class="Contacts">
+    <a> Email: <span href="mailto:NewSite@gmail.com"> NewSite@gmail.com </span></a>
+    <a> Tel: <span href="tel:+78005553535"> +7(800)555-35-35</span></a>
+  </div>
+
+  <nav class="Navigation2" >
+    <a class="one" href = "index.html"> главная страница </a>
+    <a class="two" href = "Friends.html"> друзья </a>
+    <a class="three active" href = "MeetPlace.html"> места </a>
+    <a class="four" href = "Options.html"> настройки </a>
+  </nav>
+
+  <div class="SocialNets">
+    <a href="https://www.facebook.com" class="facebook"><img src="/img/facebook_icon-icons.com_59205.png" alt="Facebook" width="30" height="30"></a>
+    <a href="https://twitter.com" class="twitter"><img src="/img/1491579542-yumminkysocialmedia22_83078.png" alt="Twitter" width="30" height="30"></a>
+    <a href="https://web.telegram.org/" class="telegram"><img src="/img/telegram_logo_icon_147228.png" alt="Telegram" width="30" height="30"></a>
+  </div>
+</footer>
+<script src="../js/ifGetRegister.js"></script>
+<script src="../js/changePlace.js"></script>
+</body>
+
+</html>

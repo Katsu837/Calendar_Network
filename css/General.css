@@ -1,0 +1,329 @@
+.Light-Theme
+{
+  background: linear-gradient(90deg, mediumseagreen 0, rgb(102, 158, 133) 60%);
+}
+.Dark-Theme
+{
+  background: linear-gradient(90deg, #2F4E4E 0, #013A33 60%);
+  color: mediumseagreen;
+}
+
+header
+{
+  margin: 2px 14px;
+  background: darkturquoise;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  min-width: 2px;
+  background:rgba(255,255,255, .15);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+}
+.RightBoardFirstLine
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  height: 50px;
+  padding: 10px 0 0;
+}
+.FirstLine
+{
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-height: 1%;
+}
+.Title
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 0 0 10px;
+}
+.Title h1
+{
+  font-family: 'Raleway';
+  font-size: 27pt;
+  align-items: start;
+  margin: 10px;
+}
+.Registration
+{
+  padding: 0 10px;
+  display: flex;
+}
+.Registration a
+{
+  position: relative;
+  right: 1%;
+  margin: 2px;
+  font-family: 'Raleway';
+  text-decoration: none;
+  font-size: 15pt;
+  color: black;
+  align-self: start;
+}
+.Registration a:hover
+{
+  transform: scale3d(105%, 105%, 120%);
+}
+.FirstLine a:hover
+{
+  font-weight: bold;
+}
+.Navigation
+{
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 10px 20px;
+}
+.aNavigation
+{
+  padding: 0 4px;
+  font-family: Raleway;
+  font-size: 15pt;
+  text-decoration: none;
+  color: black;
+}
+.aNavigation:hover
+{
+  font-weight: bold;
+  transform: scale3d(110%, 110%, 110%);
+}
+nav a.active
+{
+  font-weight: bold;
+}
+
+
+
+footer
+{
+  background:rgba(255,255,255, .15);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  min-width: 473px;
+  float: bottom;
+  margin: 22px 14px;
+  padding: 20px 10px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-rows: repeat(2, calc(100%/2));
+  grid-template-columns: calc(100%/6) calc(200%/3) calc(100%/6);
+}
+.Contacts
+{
+  grid-row: 1/4;
+  grid-column: 1/2;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  font-family: Raleway;
+  font-size: 13pt;
+}
+.Contacts a
+{
+  margin: 3px;
+}
+.Navigation2
+{
+  grid-row: 1/5;
+  grid-column: 2/3;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  align-content: center;
+  justify-content: center;
+}
+.one
+{
+  grid-column: 1/2;
+  text-align: center;
+}
+.two
+{
+  grid-column: 2/3;
+  text-align: center;
+}
+.three
+{
+  grid-column: 3/4;
+  text-align: center;
+}
+.four
+{
+  grid-column: 4/5;
+  text-align: center;
+}
+.Navigation2 a
+{
+  font-family: Raleway;
+  font-size: 15pt;
+  text-decoration: none;
+  color: black;
+}
+.SocialNets
+{
+  grid-row: 1/4;
+  grid-column: 3/4;
+  align-content: center;
+  justify-content: center;
+  text-align: right;
+  margin: 6px 0 0 0;
+  margin: 20px;
+}
+
+
+@media (max-width: 500px)
+{
+  .textRegistration
+  {
+    display: none;
+  }
+}
+
+@media (max-width: 702px)
+{
+
+  header
+  {
+    min-width: 265px;
+  }
+  .Title h1
+  {
+    font-size: 24pt;
+  }
+  .Title img
+  {
+    width: 35px;
+    height: 35px;
+  }
+  .Navigation
+  {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    justify-content: center;
+    align-content: center;
+  }
+  .Navigation a
+  {
+    text-align: center;
+    margin: 3px 0;
+  }
+  .foot
+  {
+    min-width: 265px;
+    float: bottom;
+    margin: 11px 7px;
+    padding: 10px 5px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: 50% 35% 15%;
+    grid-template-columns: 100%;
+    justify-items:center;
+  }
+  .Contacts
+  {
+    grid-row: 2/3;
+
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    font-family: 'Raleway';
+    font-size: 13pt;
+  }
+  .Navigation2
+  {
+    justify-content: center;
+    justify-items:center;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    display: grid;
+    grid-template-rows: repeat(4, 25%);
+    grid-template-columns: 100% 0 0 0;
+  }
+  .one
+  {
+    grid-row: 1/2;
+    text-align: left;
+  }
+  .two
+  {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    text-align: left;
+  }
+  .three
+  {
+    grid-row: 3/4;
+    grid-column: 1/2;
+    text-align: left;
+  }
+  .four
+  {
+    grid-row: 4/5;
+    grid-column: 1/2;
+    text-align: left;
+  }
+  .SocialNets
+  {
+    grid-row: 3/4;
+    grid-column: 1/2;
+    position: relative;
+    bottom: 16px;
+  }
+}
+
+@media (max-width: 1600px) and (min-width: 702px)
+{
+  .foot
+  {
+    display: grid;
+    grid-template-rows: repeat(2, 50%);
+    grid-template-columns: 250px 250px calc(100% - 500px) ;
+  }
+  .SocialNets
+  {
+    grid-column: 3/4;
+    margin: 20px;
+  }
+  .Navigation2
+  {
+    justify-content: left;
+    justify-items: left;
+    grid-row: 1/3;
+    grid-column: 2/3;
+    display: grid;
+    grid-template-rows: repeat(4, 25%);
+    grid-template-columns: 100% 0 0 0;
+  }
+  .one
+  {
+    grid-row: 1/2;
+    text-align: left;
+  }
+  .two
+  {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    text-align: left;
+  }
+  .three
+  {
+    grid-row: 3/4;
+    grid-column: 1/2;
+    text-align: left;
+  }
+  .four
+  {
+    grid-row: 4/5;
+    grid-column: 1/2;
+    text-align: left;
+  }
+}

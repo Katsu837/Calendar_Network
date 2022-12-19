@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/General.css">
+  <link rel="stylesheet" href="../css/Options.css">
+  <script src="../js/ThemeChange.js"></script>
+  <title> Настройки </title>
+  <link rel = "icon" type = "image/png" href="/img/747310.png">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="Light-Theme">
+<header id="Header">
+
+  <div class="FirstLine">
+    <div class="Title">
+      <img class="logo" src="/img/747310.png" alt="Логотип" width="51" height="51">
+      <h1> Calendar Network </h1>
+    </div>
+    <div class="RightBoardFirstLine">
+      <div class="Registration">
+        <a href="Registration.html"  class="textRegistration" id="textRegistr"> Регистрация </a>
+        <a id="iconRegistr" href="Registration.html"><img src="/img/4092564-about-mobile-ui-profile-ui-user-website_114033.png" alt="Иконка профиля" width="28" height="28"></a>
+      </div>
+
+
+    </div>
+  </div>
+
+  <nav class="Navigation" >
+    <a href = "index.html" class="aNavigation first"> главная страница </a>
+    <a href = "Friends.html" class="aNavigation second"> друзья </a>
+    <a href = "MeetPlace.html" class="aNavigation third"> места </a>
+    <a href = "Options.html" class="aNavigation fourth active"> настройки </a>
+  </nav>
+
+</header>
+
+<main>
+  <div class="Visual">
+    <button class="button light-theme" id="themeButton">
+      <span> Темная тема </span>
+    </button>
+  </div>
+  <div class="Profile">
+    <img class="ProfilePhoto" src="/img/Avatar-Profile-Vector-PNG-Cutout.png">
+    <span id="fullName" class="FullName"> Неопознаный пользователь </span>
+
+    <span class="LabelStatus"> Status: </span>
+    <script src="../js/AddStatus.js"></script>
+    <img class="AddStatus" src="/img/icons8-редактировать-24.png" onclick="addStatus()">
+    <input id="Status" class="Status" type="text">
+    <script src="../js/SaveStatus.js"></script>
+    <img class="saveStatus" id="saveStatus" onclick="saveStatus()" src="/img/icons8-галочка-24.png" width="20" height="20">
+    <span id="textStatus" class="textStatus"></span>
+
+    <span class="LabelQR"> QR код профиля </span>
+    <img class="QRcode" src="/img/QR_code_for_mobile_English_Wikipedia.svg.png">
+
+    <span class="LikePlace"> Любимое место </span>
+  </div>
+</main>
+<footer class="foot">
+  <div class="Contacts">
+    <a> Email: <span href="mailto:NewSite@gmail.com"> NewSite@gmail.com </span></a>
+    <a> Tel: <span href="tel:+78005553535"> +7(800)555-35-35</span></a>
+  </div>
+
+  <nav class="Navigation2" >
+    <a class="one" href = "index.html"> главная страница </a>
+    <a class="two" href = "Friends.html"> друзья </a>
+    <a class="three" href = "MeetPlace.html"> места </a>
+    <a class="four active" href = "Options.html"> настройки </a>
+  </nav>
+
+  <div class="SocialNets">
+    <a href="https://www.facebook.com" class="facebook"><img src="/img/facebook_icon-icons.com_59205.png" alt="Facebook" width="30" height="30"></a>
+    <a href="https://twitter.com" class="twitter"><img src="/img/1491579542-yumminkysocialmedia22_83078.png" alt="Twitter" width="30" height="30"></a>
+    <a href="https://web.telegram.org/" class="telegram"><img src="/img/telegram_logo_icon_147228.png" alt="Telegram" width="30" height="30"></a>
+  </div>
+</footer>
+<script src="../js/Options.js"></script>
+<script src="../js/FullName.js"></script>
+<script src="../js/ifGetRegister.js"></script>
+</body>
+
+</html>

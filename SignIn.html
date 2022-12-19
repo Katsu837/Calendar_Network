@@ -1,0 +1,53 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/SignIn.css">
+  <link rel="stylesheet" href="../css/General.css">
+  <title> Регистрация </title>
+  <link rel = "icon" type = "image/png" href="/img/747310.png">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+
+<body class="body Light-Theme">
+<div class="Square"></div>
+<div class="Square1"></div>
+
+<section>
+  <script src="../js/Initialisation2.js"></script>
+  <form class="Window">
+    <div class="Registr">
+      <h1 class="Head">Вход</h1>
+      <p class="Comment">Заполните поля ниже, чтобы войти в аккаунт.</p>
+
+      <label class="L2" for="email"><b>Email</b></label>
+      <input class="Mail" type="email" placeholder="Email" name="email" required>
+
+      <label class="L3" for="psw"><b>Пароль</b></label>
+      <input class="Psw" id="Psw" type="password" minlength="8" placeholder="Password" name="psw" required>
+
+      <script src="../js/LookPsw2.js"></script>
+      <button class="checkPsw" type="button" onclick="LookPsw2()"><img src="/img/view.png" width="24px" height="24px"></button>
+
+      <input class="But" type="button" onclick="run()" value="Войти">
+    </div>
+
+    <div class="SocialNets">
+      <a href="https://www.facebook.com" class="facebook"><img src="/img/facebook_icon-icons.com_59205.png" alt="Facebook" width="30" height="30"></a>
+      <a href="https://twitter.com" class="twitter"><img src="/img/1491579542-yumminkysocialmedia22_83078.png" alt="Twitter" width="30" height="30"></a>
+      <a href="https://web.telegram.org/" class="telegram"><img src="/img/telegram_logo_icon_147228.png" alt="Telegram" width="30" height="30"></a>
+    </div>
+
+    <div class="SignIn">
+      <p>У вас нет аккаунта? <a href="Registration.html">Registration</a></p>
+    </div>
+  </form>
+</section>
+
+<div class="Square2"></div>
+<div class="Square3"></div>
+</body>
+
+</html>

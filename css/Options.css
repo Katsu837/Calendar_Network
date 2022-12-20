@@ -29,6 +29,7 @@ main
 }
 .light-theme span
 {
+  colore: black;
   justify-self: center;
   align-self: center;
 }
